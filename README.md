@@ -85,7 +85,8 @@ called the lead.
   so it can be proven afterwards.
 - **Licence-based routing** *(built by me)*: a lead only reaches an agent
   licensed to sell in that lead's state.
-- **Consent records:** designed to support consent records.
+- **Consent records:** the data model was designed to support storing each
+  lead's consent.
 
 ## 6. What I learned
 

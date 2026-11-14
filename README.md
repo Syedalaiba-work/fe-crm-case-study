@@ -4,7 +4,7 @@
 > write-up describes my role and the engineering involved.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+![Bun](https://img.shields.io/badge/Bun-000000?logo=bun&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
@@ -41,7 +41,7 @@ contributed alongside the wider team on the rest.
 **Team work I contributed alongside:**
 
 - Suppression (do-not-call) list, web lead intake and versioned question sets
-- Invoicing, QA flags, seats and entitlements, and agent onboarding with
+- QA flags, seat and permission management, and agent onboarding with
   licence checks
 - The rule-based voice script: recorded prompts, speech recognition,
   classification of answers into branches, and a recording disclosure at the
@@ -69,24 +69,23 @@ called the lead.
 - **Multi-tenancy:** every business record is scoped to an organization, and
   the database enforces that boundary rather than relying on each query to
   remember it.
-- **Infrastructure as code:** environments and secrets are defined
-  declaratively and deployed from CI, not configured by hand.
+- **Infrastructure as code:** containerised services, a pinned and
+  reproducible toolchain, and build and deployment pipelines defined as code.
 - **Continuous integration:** lint, type checks, builds and integration tests
   run against a real database on every change.
 - **Latency budgets for real-time voice:** the gap between a caller finishing a
   sentence and the next prompt starting was treated as a hard budget, measured
   and recorded on every turn.
 
-## 5. Compliance areas I designed for
+## 5. Compliance areas the system was designed for
 
 - **Suppression lists:** anyone who asks not to be called again is excluded
   before dialing.
 - **Recording disclosure:** played first on every call and logged per call,
   so it can be proven afterwards.
-- **Licence-based routing:** a lead only reaches an agent licensed to sell in
-  that lead's state.
-- **Consent records:** consent is captured and kept with the lead so the full
-  record can be produced on request.
+- **Licence-based routing** *(built by me)*: a lead only reaches an agent
+  licensed to sell in that lead's state.
+- **Consent records:** designed to support consent records.
 
 ## 6. What I learned
 

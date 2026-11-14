@@ -1,6 +1,6 @@
 # Case Study: Insurance Call-Center CRM & Voice Script Engine
 
-> **Note:** Code is proprietary to a former employer and is not included. This
+> **Note:** Code is proprietary to an employer and is not included. This
 > write-up describes my role and the engineering involved.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
